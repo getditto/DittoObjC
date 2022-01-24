@@ -1,28 +1,24 @@
 // swift-tools-version:5.5
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "DittoObjC",
+    platforms: [ .iOS(.v11), .macOS(.v11) ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "DittoObjC",
             targets: ["DittoObjC"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "DittoObjC",
-            dependencies: []),
-        .testTarget(
-            name: "DittoObjCTests",
-            dependencies: ["DittoObjC"]),
+
+            // url: "https://software.ditto.live/cocoa/DittoObjC/1.0.19/dist/DittoObjC-dist.tar.gz",
+            // checksum: bbaec34d74b268be0df6b6664896c1ea26f145237bfb247e82811e4722a36b78
+
+            url: "https://github.com/phatblat/DittoObjC/releases/download/1.0.19/DittoObjC.xcframework.zip",
+            checksum: "08526a7e68415e2499674d171fd929e6c8cf3571581a8e7d7619d735e7612770"
+        )
     ]
 )
