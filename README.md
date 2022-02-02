@@ -2,10 +2,10 @@
 
 [![Ditto logo](https://www.ditto.live/_ipx/w_96,q_75/%2Flogos%2Flogo.png?url=%2Flogos%2Flogo.png&w=96&q=75)](https://www.ditto.live/)
 
-Swift package for the DittoObjC framework.
+## 🚚 Moved
 
-See the Ditto [iOS Installation documentation](https://docs.ditto.live/installation/ios)
-for details on how to get started and use this package in your app.
+The DittoObjC framework is now avilable as part of the
+[Ditto Swift Package](https://github.com/getditto/DittoSwiftPackage).
 
 ## Author
 
